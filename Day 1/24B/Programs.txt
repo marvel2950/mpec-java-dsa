@@ -1,0 +1,148 @@
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+        
+        //Printing in Java
+        
+        //print (same line)
+        System.out.println("Akarsh");
+        System.out.println("Jaiswal");
+        
+        //println (new line)
+        System.out.print("Akarsh");
+        System.out.print("Jaiswal");
+        
+        System.out.println("\n--------");
+        
+        //variable and data type
+        int n = 4;
+        float x = 84.7f;
+        double d = 20.7;
+        boolean flag = true; //or false
+        
+        System.out.println(n);
+        System.out.println(x);
+        System.out.println(d);
+        System.out.println(flag);
+        
+        //Loop
+        for(int i=0;i<5;i++){
+            System.out.print(i+" ");
+        }
+        
+        System.out.println("\n--------");
+        
+        //Patterns
+        //Images for n=4
+        
+        //Pattern1 
+        //* * * *
+        for(int i=0;i<n;i++){
+            System.out.print("*");
+        }
+        
+        System.out.println("\n--------");
+        
+        //Pattern2 
+        //* * * *
+        //* * * *
+        //* * * *
+        //* * * *
+        for(int j=0;j<n;j++){
+            for(int i=0;i<n;i++){
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+        
+        System.out.println("--------");
+        
+        //Pattern3
+        //* 
+        //* * 
+        //* * * 
+        //* * * *
+        for(int j=0;j<n;j++){
+            for(int i=0;i<j+1;i++){
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+        
+        System.out.println("--------");
+        
+        //Pattern4
+        //* * * *
+        //* * * 
+        //* * 
+        //*       
+        for(int j=0;j<n;j++){
+            for(int i=0;i<n-j;i++){
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+        
+        System.out.println("--------");
+        
+        //Pattern 5
+        // 1
+        // 22
+        // 333
+        // 4444
+        for(int j=0;j<n;j++){
+            for(int i=0;i<j+1;i++){
+                System.out.print(j+1);
+            }
+            System.out.println();
+        }
+        
+        System.out.println("--------");
+        
+        //Characters and ascii value (typecasting)
+        char ch = 'z';
+        System.out.println((int)ch);
+        
+        int ascii = 110;
+        System.out.println((char)ascii);
+        
+        System.out.println("--------");
+        
+        //User input
+        Scanner sc = new Scanner(System.in);    
+        
+        //integer input
+        int zz = sc.nextInt();
+        System.out.println(zz);
+        
+        System.out.println("--------");
+        
+        //Pattern 6
+        // a
+        // bb
+        // ccc
+        // dddd
+        for(int j=0;j<n;j++){
+            for(int i=0;i<j+1;i++){
+                System.out.print((char)(j+97));
+            }
+            System.out.println();
+        }
+        
+        System.out.println("--------");
+        
+        //Pattern 7
+        // 1
+        // 12
+        // 123
+        // 1234
+        for(int j=0;j<n;j++){
+            for(int i=0;i<j+1;i++){
+                System.out.print(i+1);
+            }
+            System.out.println();
+        }
+
+    }
+}
