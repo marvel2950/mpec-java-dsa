@@ -1,0 +1,9 @@
+https://practice.geeksforgeeks.org/problems/segregate-0s-and-1s5106/1
+
+https://practice.geeksforgeeks.org/problems/sort-an-array-of-0s-1s-and-2s4231/1
+
+httpsleetcode.comproblemsreverse-stringdescription
+
+https://pythontutor.com/visualize.html#mode=edit
+
+https://leetcode.com/playground/new/empty

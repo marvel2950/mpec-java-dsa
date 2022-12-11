@@ -1,0 +1,72 @@
+public class Main {
+    public static void main(String[] args) {
+        
+        //Array Declaration
+        // int[] arr = {6,7,8,1,2};
+        
+        //Indexing in array
+        // System.out.print(arr[4]);
+        
+        //Array input
+        Scanner sc = new Scanner(System.in);
+        
+        int n = sc.nextInt();
+        int[] arr  = new int[n];
+        
+        for(int i=0;i<n;i++){
+            arr[i] = sc.nextInt();
+        }
+        
+        //Print all array elements
+        // for(int i=0;i<arr.length;i++){
+        //     System.out.println(arr[i]);
+        // }
+        
+        //Print alternate elements
+        // for(int i=0;i<arr.length;i=i+2){
+        //     System.out.println(arr[i]);
+        // }
+        
+        //Print array in reverse
+        // for(int i=n-1;i>=0;i--){
+        //     System.out.println(arr[i]);
+        // }
+        
+        //Print array elements which are divisible by 3
+
+        // for(int i=0;i<arr.length;i++){
+        //     if(arr[i]%3==0)
+        //         System.out.println(arr[i]);
+        // }
+        
+        //Print array elements whose index is div by 3
+        // for(int i=0;i<arr.length;i++){
+        //     if(i%3==0)
+        //         System.out.println(arr[i]);
+        // }
+        
+        //Linear Search
+        //Last occurence
+        int ele = sc.nextInt();
+        int ans = -1;
+        for(int i=0;i<n;i++){
+            if(arr[i]==ele){
+                ans = i;
+            }
+        }
+        System.out.println(ans);
+        
+        //First occurence
+        ans = -1;
+        for(int i=0;i<n;i++){
+            if(arr[i]==ele){
+                ans = i;
+                break;
+            }
+        }
+        System.out.println(ans);
+        
+        
+        
+    }
+}

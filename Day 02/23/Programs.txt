@@ -1,0 +1,47 @@
+import java.util.Scanner;
+
+public class Main {
+	
+	public static void main(String args[]) {
+		
+		//Array Declaration
+		int[] arr = {1,6,9,7,3,2};
+		
+		//Array Indexing
+		// System.out.println(arr[0]);
+		// System.out.println(arr[1]);
+		
+		Scanner sc = new Scanner(System.in);
+		
+		//Array input
+		// int n = sc.nextInt();
+		// int[] arr = new int[n];
+		
+		// for(int i=0;i<arr.length;i++) {
+		// 	arr[i] = sc.nextInt();
+		// }
+		
+		//Printing all elements
+		// for(int i=0;i<arr.length;i++) {
+		// 	System.out.print(arr[i]+" ");
+		// }
+		
+		//Printing all elements
+		// for(int i=0;i<arr.length;i=i+2) {
+		// 	System.out.print(arr[i]+" ");
+		// }
+		
+		//Printing elements in reverse
+		// for(int i=arr.length-1;i>=0;i--) {
+		// 	System.out.print(arr[i]+" ");
+		// }
+		
+		//Print array elements whose index is div by 3
+		// for(int i=0;i<arr.length;i++) {
+		// 	if(i%3==0)
+		// 		System.out.print(arr[i]);
+		// }
+		
+	
+	}
+}
