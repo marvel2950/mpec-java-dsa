@@ -1,0 +1,97 @@
+public class Main {
+    public static void main(String[] args) {
+        
+        
+        int[] arr = {1,2,3,4};
+        // for(int i=0;i<arr.length;i++){
+        //     System.out.println(arr[i]);
+        // }
+        // System.out.println("Hello World!");
+        
+        int[][] arr1 = {{1,2,3},{4,5,6},{7,8,9}};
+        // System.out.println(arr1.length);
+        // System.out.println(arr1[0].length);
+        
+        for(int i=0;i<arr1.length;i++){
+            for(int j=0;j<arr1[0].length;j++){
+                System.out.print(arr1[i][j]+" ");
+            }
+            System.out.println();  
+        }
+        
+        int n = arr1.length;
+        int m = arr1[0].length;
+        
+        for(int i=0;i<arr1.length;i++){
+            for(int j=0;j<arr1[0].length;j++){
+                System.out.print(i+""+j+" ");
+            }
+            System.out.println();  
+        }
+        
+        
+        //   for(int i=0;i<arr1.length;i++){
+        //     for(int j=0;j<arr1[0].length;j++){
+        //         if(i==j)
+        //             System.out.print(arr1[i][j]+" ");
+        //     }
+        //     System.out.println();  
+        // }
+        
+        // for(int i=0;i<arr1.length;i++){
+        //     for(int j=0;j<arr1[0].length;j++){
+        //         if(i+j==n-1)
+        //             System.out.print(arr1[i][j]+" ");
+        //     }
+        //     System.out.println();  
+        // }
+        
+        
+        // for(int i=0;i<arr1.length;i++){
+        //     for(int j=0;j<arr1[0].length;j++){
+        //         if(i<=j)
+        //             System.out.print(arr1[i][j]+" ");
+        //     }
+        //     System.out.println();  
+        // }
+        
+        // for(int i=0;i<arr1.length;i++){
+        //     if(i==0 || i==n-1){
+        //        for(int j=0;j<arr1[0].length;j++){
+        //             System.out.print(arr1[i][j]+" ");
+        //     }
+        //     System.out.println();  
+        //     } 
+        // }
+        
+//         for(int i=0;i<n;i++){
+//             for(int j=0;j<n;j++){
+//                 // System.out.print(j+""+i+" ");
+//                 System.out.print(arr1[j][i]+" ");
+//             }
+//             System.out.println();
+            
+//         }
+        
+        // for(int i=n-1;i>=0;i--){
+        //     for(int j=0;j<n;j++){
+        //         // System.out.print(j+""+i+" ");
+        //         System.out.print(arr1[j][i]+" ");
+        //     }
+        //     System.out.println();
+        // }
+        
+        for(int i=n-1;i>=0;i--){
+            for(int j=n-1;j>=0;j--){
+                // System.out.print(j+""+i+" ");
+                System.out.print(arr1[i][j]+" ");
+            }
+            System.out.println();
+        }
+        
+        
+        
+        
+        
+    }
+}
