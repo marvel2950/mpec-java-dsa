@@ -1,0 +1,84 @@
+public class Main {
+    public static void main(String[] args) {
+        String name = "Aakarsh";
+        
+        System.out.println(name);
+        
+        int n = name.length();
+        for(int i=0;i<n;i++){
+            System.out.println(name.charAt(i));
+        }
+        
+        for(int i=n-1;i>=0;i--){
+            System.out.println(name.charAt(i));
+        }
+         
+        char ch = 'r';
+        boolean ans = false;
+        for(int i=0;i<n;i++){
+            if(name.charAt(i)==ch)
+                ans = true;
+        }
+        System.out.println(ans);
+        
+        ch = 'a';
+        int count = 0;
+        for(int i=0;i<n;i++){
+            if(name.charAt(i)==ch)
+                count++; //count = count+1
+        }
+        System.out.println(count);
+        
+        int firstIndex =-1;
+        for(int i=0;i<n;i++)
+        {
+            if(name.charAt(i)==ch){
+                firstIndex=i;
+                break;
+            }
+        }
+        System.out.println(firstIndex);
+        
+        int lastIndex =-1;
+        for(int i=0;i<n;i++)
+        {
+            if(name.charAt(i)==ch){
+                lastIndex=i;
+        }
+        }
+        
+        System.out.println(lastIndex);
+        
+        
+        int p=0;
+        char chh=' ';
+        for (int i=0;i<n;i++){
+            if(name.charAt(i)==chh)
+                p++;
+        }
+        System.out.println(p+1);
+    
+        
+        name = "Akarsh";
+        n = name.length();
+        boolean flag= false;
+        int c=0;
+        if(name.charAt(0)>=65 && name.charAt(0)<=90)
+            for (int i=1;i<n;i++){
+               if(name.charAt(i)>=97 && 
+                   name.charAt(i)<=122)
+                    c++;
+            }
+        if(c==n-1)
+            flag = true;
+        
+        System.out.println(flag);
+        
+
+     
+     
+            
+            
+            
+}   
+}

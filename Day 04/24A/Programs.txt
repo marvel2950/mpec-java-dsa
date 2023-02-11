@@ -1,0 +1,101 @@
+public class Main {
+    public static void main(String[] args) {
+        
+        int[][] arr = {{1,2,3},{4,5,6},{7,8,9},{10,11,12}};
+        
+        String name = "AakajgshjgkwdhkjasHGGHSH";
+        int n = name.length();
+        
+        for(int i=0;i<n;i++){
+            System.out.println(name.charAt(i));
+        }
+        
+        for(int i=n-1;i>=0;i--){
+            System.out.println(name.charAt(i));
+        }
+        
+        char ch = 'r';
+        boolean ans = false;
+        for(int i=0;i<n;i++){
+            if(name.charAt(i)==ch)
+                ans = true;
+        }
+        
+        System.out.println(ans);
+        
+        ch = 'a';
+        int lastIndex = -1;
+        for(int i=0;i<n;i++){
+            if(name.charAt(i)==ch)
+                lastIndex = i;
+        }
+        
+        System.out.println(lastIndex);
+        
+        ch = 'a';
+        int firstIndex = -1;
+        for(int i=0;i<n;i++){
+            if(name.charAt(i)==ch){
+                firstIndex = i;
+                break;
+            }
+                
+        }
+        
+        System.out.println(firstIndex);
+        
+     
+        int count = 0;
+        for(int i=0;i<n;i++){
+            if(name.charAt(i)==ch){
+                count++; ///count = count+1
+            }
+        }
+        
+        count = 0;
+        for(int i=0;i<n;i++){
+            if(name.charAt(i)>=65 && name.charAt(i)<=90){
+                count++; ///count = count+1
+            }
+                
+        }
+        
+        System.out.println(count);
+        
+        count =0;
+        for(int i=0; i<n; i++){
+            char ch1 = name.charAt(i);
+            if(ch1 == 'a' || ch1 == 'e' || ch1 == 'i' 
+               || ch1 == 'o' || ch1 == 'u' || ch1 == 'A' 
+               || ch1 == 'E' || ch1 == 'I' || ch1 == 'O' 
+               || ch1 == 'U'){
+                count++;
+            }
+        }
+        
+        System.out.println(count);
+        
+        name = "Akarsh";
+        n = name.length();
+        count = 0;
+        for(int i=1;i<n;i++){
+            if(name.charAt(i)>=97 && name.charAt(i)<=122)
+                count++;
+        }
+        if(count==n-1 && name.charAt(0)>=65 && name.charAt(0)<=90)
+            System.out.println("Yes");
+        else
+            System.out.println("No");
+       
+        name = "Akarsh Jaiswal works at ____";
+        n = name.length();
+        int spaces =  0;
+        for(int i=0;i<n;i++){
+            if(name.charAt(i)==' '){
+                spaces++;
+            }
+        }
+        System.out.println(spaces+1);
+        
+    }
+}
