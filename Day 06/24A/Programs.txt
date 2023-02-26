@@ -1,0 +1,136 @@
+// "static void main" must be defined in a public class.
+public class Main {
+    public static void main(String[] args) {
+        
+        //O(1)
+        // System.out.println("Akarsh");
+        
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        
+        //O(n)
+        // for(int i=0;i<n;i++){
+        //     System.out.println("Akarsh");
+        // }
+        
+        // O(n^2)
+        // for(int j=0;j<n;j++){
+        //     for(int i=0;i<n;i++){
+        //         System.out.println("Akarsh");
+        //     }
+        // }
+        
+        //O(n^2)
+        // for(int j=0;j<n;j++){
+        //     for(int i=0;i<j;i++){
+        //         System.out.println("Akarsh");
+        //     }
+        // }
+
+// n = 4
+// j i
+// 0 0
+// 1 1
+// 2 2
+// 3 3
+
+// (0+1+2+3) = n(n+1)/2 = (n^2+n)/2
+       
+        //i*i < n => i<sqrt(n)
+        //O(sqrt(n))
+//         for(int i=0;i*i<n;i++){
+//             System.out.println("Akarsh");
+//         }
+
+//         for(int i=0;i<Math.sqrt(n);i++){
+//             System.out.println("Akarsh");
+//         }
+        
+        //O(1)
+        // for(int i=0;i<n;i++){
+        //     System.out.println("Akarsh");
+        //     break;
+        // }
+        
+        //O(1)
+        // for(int i=0;i<n;i++){
+        //     if(i==5)
+        //         break;
+        //     System.out.println("Akarsh");
+        // }
+        
+        //O(n)
+        // for(int i=0;i<n;i++){
+        //     for(int j=0;j<n;j++){
+        //         System.out.println("Akarsh");
+        //         break;
+        //     }
+        // }
+        
+        //O(n^2)
+        // for(int i=0;i<n;i++){
+        //     for(int j=0;j<n;j++){
+        //         if(j==n*n)
+        //             break;
+        //         System.out.println("Akarsh");
+        //     }
+        // }
+        
+        //O(n)
+        // for(int i=0;i<n;i++){
+        //     if(i==5)
+        //         continue;
+        //     System.out.println("Akarsh");
+        // }
+        
+        //O(n)
+        // for(int i=0;i<n;i++){
+        //     continue;
+        //     System.out.println("Akarsh");
+        // }
+        
+        //O(n)
+        // for(int i=0;i<n;i++){
+        //     continue;
+        //     for(int j=0;j<n;j++){
+        //         System.out.println("Akarsh");
+        //     }
+        // }
+        
+        //O(n^2)
+        // for(int i=0;i<n*n;i++){
+        //     System.out.println("Akarsh");
+        // }
+        
+        //Infinite loop
+        // for(int i=0;i<n;i=i*2){
+        //     System.out.println("Akarsh");
+        // }
+        
+        //O(logn)
+        for(int i=1;i<=n;i=i*2){
+            System.out.println("Akarsh");
+        }
+
+// Base 2
+// n = 64 -> 7 (log(64) = log(2^6) = 6.log2 = 6)
+
+// n -> logn+1
+        
+        for(int i=0;i<n*n;i++){
+            for(int j=0;j<i*i;j++){
+                System.out.println("Akarsh");
+            }
+        }
+
+n = 2
+i j
+0 0 
+1 1
+2 4
+3 9
+
+(0+1+4+9) = (1+2^2+3^2+---- [n^2 terms]) = m(m+1)(2m+1)/6 -> n^6
+          
+    }
+}
