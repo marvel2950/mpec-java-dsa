@@ -1,0 +1,137 @@
+class Node{
+    
+    int data;
+    Node next;
+    
+    Node(int val){
+        this.data = val;
+        this.next = null;
+    }
+}
+
+class LinkedListImpl{
+    
+    Node head;
+    
+    LinkedListImpl(){
+        this.head = null;
+    }
+    
+}
+
+
+
+public class Main {
+    public static void main(String[] args) {
+        
+        LinkedListImpl list = new LinkedListImpl();
+                
+        // System.out.println(list.head);
+        
+        list.head = new Node(4);
+        list.head.next = new Node(5);
+        list.head.next.next = new Node(7);
+        list.head.next.next.next = new Node(1);
+        list.head.next.next.next.next = new Node(2);
+        
+        Node tempHead = list.head;
+        
+        // while(tempHead != null){
+        //     System.out.println(tempHead.data);
+        //     tempHead= tempHead.next;
+        // }
+        
+        // while(tempHead != null){
+        //     System.out.println(tempHead.data);
+        //     if(tempHead.next==null){
+        //         break;
+        //     }
+        //     tempHead= tempHead.next.next;
+        // }
+        
+        // int len = 0;
+        // while(tempHead !=null){
+        //     len++;
+        //     // System.out.println(tempHead.data);
+        //     tempHead=tempHead.next;
+        // }
+//         System.out.println(len);
+        
+        
+        // int key = 7;
+        // boolean c= false;
+        // while(tempHead != null)
+        // {
+        //     if(tempHead.data == key)
+        //     {
+        //         System.out.println("got");
+        //         c=true;
+        //         break;
+        //     }
+        //     tempHead = tempHead.next;
+        // }
+        // if(c==false){
+        //     System.out.println("not in linklist");
+        // }
+        
+        // int pos = 5;
+        // if(pos<=0){
+        //     System.out.println("Invalid");
+        // }else{
+        //     while(tempHead!=null){
+        //         pos--;
+        //         if(pos==0){
+        //             System.out.println(tempHead.data);
+        //             break;
+        //         }
+        //         tempHead = tempHead.next;
+        //     }
+        // }
+        // if(pos>0){
+        //     System.out.println("Invalid");
+        // }
+        
+        // while(tempHead != null){
+        //     if(tempHead.data%2==0){
+        //         System.out.println(tempHead.data);
+        //     }
+        //     tempHead = tempHead.next;
+        // }
+        Node tempHead1 = list.head;
+        int len=0;
+        int pos=3;
+        if(pos<=0)
+        {
+            System.out.println("invalid");
+        }
+        else
+        {
+            while(tempHead1 !=null)
+            {
+                len++;
+                tempHead1= tempHead1.next;
+            }
+            pos=len-pos+1;
+            while(tempHead !=null)
+            {
+                pos--;
+                if(pos==0)
+                {
+                    System.out.println(tempHead.data);
+                    break;
+                }
+                tempHead = tempHead.next;
+            }
+        }
+        if(pos>0)
+        {
+            System.out.println("invalid");
+        }
+//         System.out.println(tempHead.data);
+//         System.out.println(tempHead.next.data);
+//         System.out.println(tempHead.next.next.data);
+        
+        // System.out.println(list.head.data);
+        // System.out.println("Hello Akarsh!");
+    }
+}

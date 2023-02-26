@@ -1,0 +1,77 @@
+// "static void main" must be defined in a public class.
+public class Main {
+    public static void main(String[] args) {
+        
+//         String name = "akarsh";
+//         System.out.println(name);
+        
+//         for(int i=0;i<name.length();i++){
+//             System.out.println(name.charAt(i));
+//         }
+        
+        //i++ = i=i+1 (incremental loop)
+        // for(int i=0;i<=5;i++){
+        //     System.out.println(i);
+        // }
+        
+        //i-- = i=i-1 (incremental loop)
+        // for(int i=4;i>=0;i=i-1){
+        //     System.out.println(i);
+        // }
+        
+        // for(int i=0;i<=20;i=i+2){
+        //     System.out.println(i);
+        // }
+        
+        // for(int i=5;i<10000;i=i*5){
+        //     System.out.print(i+" ");
+        // }
+        
+        // for(int i=17;i<=170;i=i+17){
+        //     System.out.println(i);
+        // }
+        
+        // for(int i=1;i<=10;i++){
+        //     System.out.println(i*17);
+        // }
+        
+//         int sum = 0;
+//         for(int i=2;i<=5;i=i+2){
+//             sum = sum+i;
+//             // System.out.println(sum+i+" "+sum);
+//             // System.out.println(sum);
+//             // System.out.println(i);
+//         }
+//         System.out.println(sum);
+
+//         long sum1 = 1;
+//          for(int i=1;i<=100;i++){
+//              sum1 = sum1 *i;
+//               System.out.println(sum1);
+//          }
+//           System.out.println(sum1);
+       
+        int n = 27;
+        for(int i=2;i<=n-1;i++){
+            if(n%i==0){
+                System.out.println("not prime");
+                break;
+            }
+            else{
+                System.out.println("prime");
+                break;
+            }
+                
+                // System.out.println(i);
+        }
+        
+        
+        
+
+        
+        
+        
+        
+        
+    }
+}
