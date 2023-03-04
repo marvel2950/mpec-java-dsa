@@ -1,0 +1,64 @@
+public class Main {
+    public static void main(String[] args) {
+        
+        String name = "akarsh";
+        int n = name.length();
+        // System.out.println(n);
+        
+        // for(int i=0;i<n;i++){
+        //     System.out.println(i+" -> "+name.charAt(i));
+        // }
+        
+        // for(int i=n-1;i>=0;i--){
+        //     System.out.println(i+" -> "+name.charAt(i));
+        // }
+        
+        // for(int i=0;i<n;i++){
+        //     if(name.charAt(i) != 'a' && name.charAt(i) != 'e' && name.charAt(i) != 'i' && name.charAt(i) != 'o' && name.charAt(i) != 'u')
+        //     System.out.println(i+" -> "+name.charAt(i));
+        // }
+        
+        String a = "akarsh";
+        a = a + " jaiswal";
+        // System.out.println(a);
+        
+        String s = "akarsh";
+        // rev = "hsraka";
+        String rev = "";
+        
+        //Time -> O(n)
+        //Space -> O(1)
+        // for(int i=n-1;i>=0;i--){
+        //     rev = rev + s.charAt(i);
+        //     // System.out.println(i+" -> "+s.charAt(i));
+        //     System.out.println(rev);
+        // }
+        
+        s = "aKarsh Jaiswal";
+        s = s.toLowerCase();
+        // System.out.println(s);
+        
+        String x = "AkarshJaiswal";
+        n = x.length();
+        for(int i=0;i<n;i++){
+            int ascii = x.charAt(i);
+            if(ascii>=97 && ascii<=122)
+                System.out.println(x.charAt(i));
+        }
+        
+        String c = "    ajh sjxsha";
+        String d = "";
+        n = c.length();
+        for(int i=0;i<n;i++){
+            if(c.charAt(i)==' ')
+                continue;
+            d = d+c.charAt(i);       
+        }
+        System.out.println(d);
+        
+        
+        
+        
+        
+    }
+}

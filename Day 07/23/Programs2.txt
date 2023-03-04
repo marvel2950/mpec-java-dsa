@@ -1,0 +1,131 @@
+//Node -> data, next
+//head -> address of the first node
+
+class Node{
+    int data;
+    Node next;
+    
+	// @Override
+	// public String toString() {
+	// return "Node printed";
+	// }
+    
+    Node(int val){
+        this.data = val;
+        this.next = null;
+    }
+}
+
+class LinkedListImpl{
+    
+// 	@Override
+// 	public String toString() {
+        
+//         Node temp = this.head;
+        
+//         while(temp!=null){
+//             System.out.println(temp.data);
+//             temp = temp.next;
+//         }
+// 	    return "";
+// 	}
+    
+    Node head;
+    
+    LinkedListImpl(){
+        this.head = null;
+    }
+}
+
+class Main{
+    public static void main(String args[]){
+        
+        LinkedListImpl list = new LinkedListImpl();
+        
+        list.head = new Node(3);
+        list.head.next = new Node(5);
+        list.head.next.next = new Node(7);
+        list.head.next.next.next = new Node(9);
+        list.head.next.next.next.next = new Node(0);
+
+        
+        Node temp = list.head;
+        
+        while(temp!=null){
+            System.out.print(temp.data+" ");
+            temp = temp.next;
+        }
+        System.out.println();
+        
+        temp = list.head;
+        
+        // while(temp!=null){
+        //     System.out.print(temp.data+" ");
+        //     temp = temp.next;
+        //     if(temp !=null)
+        //         temp = temp.next;
+        // }
+        
+        // System.out.println();
+        
+        // while(temp!=null){
+        //     if(temp.data%2!=0)
+        //         System.out.print(temp.data+" ");
+        //     temp = temp.next;
+        // }
+        
+        // System.out.println();
+        
+        int pos = 2;
+        // while(temp!=null){
+        //     pos--;
+        //     if(pos==0)
+        //         System.out.println(temp.data);
+        //     temp = temp.next;
+        // }
+        // if(pos!=0){
+        //     System.out.println("Invalid position");
+        // }
+        
+//         int count = 0;
+//         while(temp!=null){
+//             count++;
+//             temp = temp.next;
+//         }
+//         temp = list.head;
+        
+//         int actualPosition = count-pos+1;
+//         while(temp!=null){
+//             actualPosition--;
+//             if(actualPosition==0)
+//                 System.out.println(temp.data);
+//             temp = temp.next;
+//         }
+//         if(actualPosition!=0){
+//             System.out.println("Invalid position");
+//         }
+        
+        int x = 9;
+        int count = 0;
+        while(temp!=null){
+            if(temp.data==x)
+                count++;
+            temp = temp.next;
+        }
+        System.out.println(count);
+        
+        
+        
+        
+        
+        
+        // System.out.println(list.head.data);
+        // System.out.println(list.head.next.data);
+        // System.out.println(list.head.next.next.data);
+        // System.out.println(list.head.next.next.next.data);
+        
+        System.out.println("Hello Akarsh");
+        
+        // System.out.println(list.head);
+    }
+}

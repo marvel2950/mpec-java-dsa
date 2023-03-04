@@ -1,0 +1,21 @@
+// "static void main" must be defined in a public class.
+public class Main {
+    public static void main(String[] args) {
+        String name = "akarsh";
+        int n = name.length();
+        // for(int i=0;i<n;i++){
+        //     char ch = name.charAt(i);
+        //         if(ch != 'a' && ch != 'e' && ch != 'i'
+        //            && ch != 'o' && ch != 'u')
+        //     System.out.println(i+" -> "+name.charAt(i));
+        // }
+        
+        name = "AkaRsh";
+        
+        for(int i=0;i<n;i++){
+            int ascii = name.charAt(i);
+            if(ascii>=65 && ascii<=90)
+                System.out.println(i+" -> "+name.charAt(i)+" -> "+ascii);
+        }
+    }
+}

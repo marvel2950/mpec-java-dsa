@@ -1,0 +1,67 @@
+public class Main {
+    
+    //Functions
+    //fun name -> max
+    //input(parameters) -> int a, int b
+    //return type -> int
+    
+    //Syntax
+    // <return-type> <fun-name>(<parameters>){
+    //     <function-body>
+    // }
+    
+    static void max(int a, int b){
+        if(a>b){
+            System.out.println(a);
+        }
+        else{
+           System.out.println(b); 
+        }
+    }
+    
+    
+    public static void main(String[] args) {
+        
+        // System.out.println(Math.ceil(4.52));
+        // System.out.println(Math.floor(4.52));
+        // System.out.println(Math.min(4,5));
+        // System.out.println(Math.min(4,5));
+        
+        int a = 9;
+        int b = 3;
+        
+        // System.out.println(a>b);
+        
+        if(a>b){
+            System.out.println(a);
+        }
+        else{
+           System.out.println(b); 
+        }
+        
+        int c = 10;
+        int d = 12;
+        
+        if(c>d){
+            System.out.println(c);
+        }
+        else{
+           System.out.println(d); 
+        }
+        
+        //fun call
+        max(a,b);
+        
+        
+        //Array List
+        ArrayList<Integer> list = new ArrayList<>();
+        list.add(5);
+        list.add(6);
+        list.add(7);
+        System.out.println(list);
+        System.out.println(list.get(2));
+        
+        
+        
+    }
+}
