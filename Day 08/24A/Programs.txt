@@ -1,0 +1,16 @@
+public class Main {
+    public static void main(String[] args) {
+        String str = "kitten";
+        int len = str.length();
+        int n = 4;
+        String op = "";
+        for(int i=0;i<len;i++){
+            if(i != n){
+                op = op+str.charAt(i);
+                System.out.println(str.charAt(i)+" -> "+op);
+            }
+            
+        }
+        
+    }
+}
