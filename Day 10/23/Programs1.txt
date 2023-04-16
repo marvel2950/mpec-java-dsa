@@ -1,0 +1,64 @@
+public class Main {
+    
+    static void printIncr(int n){
+        if(n==1){
+            System.out.print(1+" ");
+            return;
+        }
+        printIncr(n-1);
+        System.out.print(n+" ");
+    }
+    
+    static void printDecr(int n){
+        if(n==1){
+            System.out.print(1+" ");
+            return;
+        }
+        System.out.print(n+" ");
+        printDecr(n-1);
+    }
+    
+    static void printDecrEven(int n){
+        if(n==2){
+            System.out.print(2+" ");
+            return;
+        }
+        printDecrEven(n-2);
+        System.out.print(n+" ");
+    }
+    
+    static void printIncrOdd(int n){
+        if(n==1){
+            System.out.print(1+" ");
+            return;
+        }
+        printIncrOdd(n-2);
+        System.out.print(n+" ");
+    }
+    
+    public static void main(String[] args) {
+        
+        int n = 7;
+        printIncr(n);
+        
+        System.out.println("\n------------");
+        
+        printDecr(n);
+        
+        System.out.println("\n------------");
+        
+        if(n%2==0)
+          printIncrOdd(n-1);
+        else
+            printIncrOdd(n);
+        
+        System.out.println("\n------------");
+        
+        if(n%2==1)
+          printDecrEven(n-1);
+        else
+            printDecrEven(n);
+        
+        System.out.println("\nHello Akarsh!");
+    }
+}

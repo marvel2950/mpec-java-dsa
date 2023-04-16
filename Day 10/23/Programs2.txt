@@ -1,0 +1,78 @@
+/Recursion
+public class Main {
+    static void printIncr(int n){
+        if(n==1){
+            System.out.print(1+" ");
+            return;
+        }
+        printIncr(n-1);
+        System.out.print(n+" ");
+    }
+    static void printDecr(int n){
+        if(n==1){
+            System.out.print(1+" ");
+            return;
+        }
+        System.out.print(n+" ");
+        printDecr(n-1);
+    }
+    static int fib(int n){
+        if(n<=1)
+        {
+                return n;
+        }
+      return(fib(n-1)+fib(n-2));
+    }
+          
+    static void oddnum(int n){
+        if(n==1){
+            System.out.print(1+" ");
+            return; 
+        }
+        oddnum(n-2);
+         System.out.print(n+" ");
+    }
+    static void evennum(int n){
+        if(n<=1){
+            System.out.print(" ");
+        return;
+    }
+        if(n==2){
+            System.out.print(2+" ");
+            return; 
+        }
+         System.out.print(n+" ");
+        evennum(n-2);
+           
+
+    }
+    public static void main(String[] args) {
+        int n= 8;
+                System.out.println("\n---------");
+                System.out.println("Increasing Order");
+        printIncr(n);
+        System.out.println("\n---------");
+        System.out.println("Decreasing Order");
+        printDecr(n);
+                System.out.println("\n---------");
+                System.out.println("Fibonacci");
+        int j=fib(n);
+                System.out.println(j);
+               
+        System.out.println("\n---------");
+                System.out.println("Odd Number");
+    if(n%2==0)
+        oddnum( n-1);
+    else
+        oddnum(n);
+        System.out.println("\n---------");
+                System.out.println("Even Number");
+    if(n%2==0)
+        evennum(n);
+    else
+        evennum(n-1);
+    
+        System.out.println("\n---------");
+        System.out.println("Hello World!");
+    }
+}
