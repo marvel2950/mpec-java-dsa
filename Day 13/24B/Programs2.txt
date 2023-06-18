@@ -1,0 +1,61 @@
+// "static void main" must be defined in a public class.
+class Human{
+    //propeties -> attributes
+    //instance variables
+    int age;
+    int wt;
+    
+    //default constructor, non param
+    Human(){
+        System.out.println("default...");
+    }
+    
+    Human(String name){
+        System.out.println("param...");
+    }
+    
+    // Human(int agge, int weight){
+    //     age = agge;
+    //     wt = weight;
+    //     // System.out.println("param...");
+    // }
+    
+    Human(int age, int wt){
+        this.age = age;
+        this.wt = wt;
+        // System.out.println("param...");
+    }
+    
+    public String toString(){
+        return "hello akarsh";
+    }
+    
+    //behaviours -> methods
+    void talk(){
+        System.out.println("talking...");
+    }
+    
+    //method overloading
+    void talk(String name){
+        System.out.println(name+" is talking...");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        
+        //local variables, reference variable, object
+        Human akarsh = new Human(90,99);
+        Human h2 = new Human("akarsh");
+        // akarsh.talk("akarsh");
+        // akarsh.talk();
+        // int a;
+        // // System.out.println(a);
+        // // System.out.println("Hello");
+        // System.out.println(akarsh);
+        System.out.println(akarsh.age);
+        // akarsh.age = 15;
+        // akarsh.wt = 90;
+        // System.out.println(akarsh.age);
+    }
+}

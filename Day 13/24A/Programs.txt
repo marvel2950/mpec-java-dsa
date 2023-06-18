@@ -1,0 +1,36 @@
+class Human{
+    //properties -> attributes -> instance variables
+    int wt;
+    int ht;
+    
+    Human(){
+        System.out.println("default..");
+    }
+    
+    //Constructor overloading
+    Human(int weight, int height){
+        wt = weight;
+        ht = height;
+    }
+    
+    //behavior -> methods -> instance methods
+    void talk(){
+        System.out.println("talking...");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        //local variable
+        int a;
+        // System.out.println(a);
+        
+        //reference variable
+        Human akarsh = new Human();
+        Human abc = new Human(15,16);
+//         akarsh.talk();
+        System.out.println(abc.wt);
+        
+        System.out.println("Hello Akarsh");
+    }
+}

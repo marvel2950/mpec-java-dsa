@@ -1,0 +1,69 @@
+class Car{
+    int wheels;
+    int color;
+    
+    void start(){
+        System.out.println("starting...");
+    }
+    
+    void drive(){
+        System.out.println("driving...");
+    }
+    
+    void execute(){
+        start();
+        System.out.println("Random...");
+        drive();
+    }
+}
+
+class SUV extends Car{
+    // method overriding
+    void start(){
+        System.out.println("starting suv...");
+    }
+    
+    void execute(){
+        super.start();
+        System.out.println("Random...");
+    }
+
+}
+
+// class MUV extends SUV{
+    //method overriding
+    // void start(){
+    //     System.out.println("starting suv...");
+    // }
+
+    //method overloading
+    void start(String name){
+        System.out.println("starting suv...");
+    }
+    
+    // void execute(){
+    //     start();
+    //     System.out.println("Random...");
+    // }
+
+// }
+
+
+public class Main {
+    public static void main(String[] args) {
+        Car c1 = new Car();
+        // c1.execute();
+        SUV s1 = new SUV();
+        s1.execute();
+        // s1.start();
+        // c1.start();
+        // s1.execute();
+        
+//         MUV m1 = new MUV();
+//         m1.start();
+        
+        int a = 5+6;
+        String a = "akarsh" + "jaiswal";
+        System.out.println("Hello World!");
+    }
+}
