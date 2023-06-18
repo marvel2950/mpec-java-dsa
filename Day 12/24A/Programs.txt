@@ -1,0 +1,56 @@
+class Human{
+    //Properties -> attributes
+    int ht;
+    int wt;
+    
+    //constructor (default, non param)
+    Human(){
+       System.out.println("default contructor...");
+    }
+    
+    //constructor (user defined, param)
+    Human(String name){
+       System.out.println(name+" is calling contructor..."); 
+    }
+    
+    //constructor overloading
+    Human(int wt, int ht){
+        this.wt = wt;
+        this.ht = ht;
+    }
+    
+    //Behavior -> method
+    void sleep(){
+        System.out.println("sleeping...");
+    }
+
+    //method overloading
+    void sleep(String name){
+        System.out.println(name+" is sleeping...");
+    }
+    
+    void sleep(String name, String place){
+        System.out.println(name+" is sleeping at "+place);
+    }
+
+
+}
+
+public class Main {
+    public static void main(String[] args) {
+        
+        // Human h = new Human();
+        Human h2 = new Human("akarsh");
+        Human h3 = new Human(10,15);
+        System.out.println(h3.ht);
+        System.out.println(h2.ht);
+        
+//         h.sleep();
+//         h.sleep("akarsh");
+//         h.sleep("akarsh","home");
+        
+        System.out.println(h3);
+        
+        
+    }
+}
